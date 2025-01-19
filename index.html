@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="Welcome">
+        <p>Library</p>
+        <p>by <span>Taha Loghmari</span></p>
+      </div>
+      <div class="Header">
+        <button class="Add First">Add a Book</button>
+      </div>
+      <div class="books"></div>
+    </div>
+    <div class="hidden">
+      <div class="inputs">
+        <div class="top">
+          <legend>New book</legend>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18 18 6M6 6l12 12"
+            />
+          </svg>
+        </div>
+        <div class="title input">
+          <label for="title">Title:</label>
+          <input type="text" name="title" id="title" placeholder="DeepWork.." />
+        </div>
+        <div class="author input">
+          <label for="author">Author:</label>
+          <input
+            type="text"
+            name="author"
+            id="author"
+            placeholder="Cal Newport..."
+          />
+        </div>
+        <div class="nbPages input">
+          <label for="pages">Number of Pages:</label>
+          <input
+            type="number"
+            name="pages"
+            id="pages"
+            placeholder="(20,30,...)"
+          />
+        </div>
+        <div class="Read">
+          <label for="read">Read:</label>
+          <input type="checkbox" name="read" id="read" />
+        </div>
+        <button class="Add Second">Add</button>
+      </div>
+    </div>
+  </body>
+</html>

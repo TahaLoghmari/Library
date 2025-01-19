@@ -1,0 +1,176 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+@font-face {
+  font-family: "Custom";
+  src: url("../fonts/Norse-Bold.otf") format("woff2");
+}
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: rgba(192, 190, 190, 0.753);
+}
+.container {
+  padding: 20px;
+}
+.Add {
+  padding: 15px;
+  border: 0px solid;
+  border-radius: 8px;
+  background-color: rgb(95, 95, 206);
+  width: 200px;
+  color: white;
+  font-weight: bold;
+}
+.Welcome p:first-child {
+  font-weight: bold;
+  font-size: 72px;
+  font-family: "Custom";
+}
+.container p span {
+  color: blue;
+}
+.Header {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Welcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.books {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.book {
+  border: 2px solid black;
+  border-radius: 8px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  gap: 5px;
+}
+.book p:nth-child(2) {
+  color: rgb(143, 139, 139);
+}
+.book p:first-child,
+.book p:nth-child(3) {
+  font-weight: bold;
+}
+.bookButtonRead {
+  background-color: rgb(10, 156, 10);
+}
+.bookButtonNotRead {
+  background-color: yellow;
+}
+.bookButtonNotRead,
+.bookButtonRead {
+  font-weight: bold;
+  border: 0px solid;
+  border-radius: 8px;
+  padding: 10px;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.trashButton {
+  background-color: red;
+  font-weight: bold;
+  border: 0px solid;
+  border-radius: 8px;
+  padding: 10px;
+  width: 70px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.miniContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.hidden {
+  display: none;
+}
+legend {
+  font-size: 24px;
+  font-family: "Custom";
+}
+.form {
+  background-color: white;
+  border: solid 2px black;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+.blur {
+  filter: blur(3px);
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.inputs svg {
+  height: 20px;
+  cursor: pointer;
+}
+.top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  padding: 10px;
+}
+.input label,
+.Read {
+  font-weight: bold;
+}
+.input input {
+  background-color: #e1dddd;
+  border: 0px solid;
+  border-radius: 8px;
+  height: 30px;
+  width: 200px;
+}
