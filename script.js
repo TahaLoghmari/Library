@@ -62,10 +62,8 @@ class Book {
         Book.appendChild(nbPages); 
         trash.addEventListener("click",(e) =>
         {
-            console.log(e);
-            myLibrary.splice(i,1);
-            console.log(myLibrary);
-            ShowBooks();
+            myLibrary.collection.splice(i,1);
+            myLibrary.ShowBooks();
         });
         status.addEventListener("click",() =>
         {
@@ -78,7 +76,7 @@ class Book {
         group.append(trash);
         group.classList.add("miniContainer");
         Book.append(group);
-        Books.appendChild(Book);
+        Books.appendChild(Book) ;
     }
 }
 let myLibrary = new Library() ; 
